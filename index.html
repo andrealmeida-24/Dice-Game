@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Styles-->
+    <link rel="stylesheet" href="style.css" />
+    <title>Dice Game</title>
+  </head>
+  <body>
+    <nav>
+      <h1>
+        <span id="dice-text">DICE</span><span id="game-text">GAME 🎲</span>
+      </h1>
+      <a href="https://github.com/andrealmeida-24" target="_blank">
+        <img id="github-logo" src="GitHub-Mark-Light-120px-plus.png" />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/andr%C3%A9-almeida-web-dev/"
+        target="_blank"
+      >
+        <img id="linkedin-logo" src="linkedIn.png" />
+      </a>
+    </nav>
+
+    <div class="wrapper">
+      <h2 id="lets-play-text">Let's play!</h2>
+      <div class="player-names">
+        <h3 id="player1-text">Player1</h3>
+        <h3 id="player2-text">Player2</h3>
+      </div>
+
+      <div class="dices">
+        <div id="dice1"><img id="dice-photo-p1" src="dice1.jpg" /></div>
+        <div id="dice2"><img id="dice-photo-p2" src="dice1.jpg" /></div>
+      </div>
+
+      <div class="buttons">
+        <button id="roll-dice-button" onclick="rollTheDice()">
+          Roll the Dice!
+        </button>
+        <button id="edit-names-button" onclick="promptNames()">
+          Edit Names
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
